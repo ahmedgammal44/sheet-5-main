@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication81;
+
+/**
+ *
+ * @author King
+ */
+public class JavaApplication81 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Account a=new Account(400,10000);
+        a.getId(400);
+        a.getBalance(10000);
+        a.getAnnualInterestRate(0.75);
+        a.datacreated();
+        System.out.println("the total after withdraw="+a.withdraw(2000));
+        System.out.println("the total after deposite="+a.deposite(3000));
+    }
+    
+}
